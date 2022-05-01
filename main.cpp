@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-    var i = 0;
     // int nrPupils = 56,nrGroups=0,nrLeft=0,groupSize = 0;
     // string str_groupSize = "0";
     // cout << "Please enter the size of each group?" << endl;
