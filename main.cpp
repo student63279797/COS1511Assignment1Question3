@@ -5,15 +5,40 @@ using namespace std;
 
 int main()
 {
-    // int nrPupils = 56,nrGroups=0,nrLeft=0,groupSize = 0;
-    // string str_groupSize = "0";
-    // cout << "Please enter the size of each group?" << endl;
-    // getline(cin,str_groupSize);
-    // groupSize = stoi(str_groupSize);
-    // nrGroups = nrPupils / groupSize;
-    // nrLeft = nrPupils % groupSize;
-    // cout << "There are " << groupSize <<" groups consisting of " << nrGroups <<" pupils There are " << nrLeft <<" remaining pupils" << endl;
-    // //getline(cin,str_groupSize);
+    float var1,var2;
+    string operation;
+    cout << "Please enter the first float value:";
+    cin>>var1;
+    cout << "Please enter the second float value:";
+    cin>>var2;
+    cout << "Please enter the operation required :";
+    cin>>operation;
 
+    if (operation == "+")
+    {
+        float sum = var1+var2;
+        cout << "The sum of " << var1 <<" and " << var2 <<" is " << sum;
+    }
+    if (operation == "-")
+    {
+        float difference = var1-var2;
+        cout << "The difference of " << var1 <<" and " << var2 <<" is " << difference;
+    }
+    if (operation == "*")
+    {
+        float product = var1*var2;
+        cout << "The product of " << var1 <<" and " << var2 <<" is " << product;
+    }
+    if (operation == "/")
+    {
+        float division = var1/var2;
+        cout << "The division of " << var1 <<" and " << var2 <<" is " << division;
+    }
+    if (operation == "%")
+    {
+        int modulo = (int)var1 % (int)var2;
+        cout << "The modulos of " << var1 <<" and " << var2 <<" is " << modulo;
+    }
+    
     return 0;
 }
